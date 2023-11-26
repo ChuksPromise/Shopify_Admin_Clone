@@ -1,0 +1,374 @@
+*{
+   font-size: 13px;
+}
+body{
+   margin: 0px auto;
+   font-family: sans-serif;
+   background: #f1f1f1
+}
+nav{
+   background: #1C181D;
+   display: flex;
+   justify-content: space-between;
+   padding:0px 10px;
+   align-items: center;
+   height:  60px;
+}
+.logosec{
+   width: 220px;
+}
+.logossc{
+   position: absolute;
+   visibility: hidden;
+}
+.searchsec{
+   border-radius: 8px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   padding: 3px 10px;
+   background-color: #322F33;
+   width: 40%;
+   border: 1px solid rgb(175, 175, 175);
+}
+.searchsec:hover{
+   border: 1px solid #F7F7F7
+}
+.searchsec:focus{
+   border: 2px solid #F7F7F7
+}
+.searchsec:active{
+   border: 2px solid #F7F7F7
+}
+.searchsec input{
+   background: none;
+   border: none;
+   height: 20px;
+   color: white;
+   margin-left: 5px;
+   outline: none;
+   width: 100%;
+}
+svg{
+   /* background: red; */
+}
+.bellsec{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   width: 205PX;
+   box-sizing: border-box;
+}
+.bellsec .forbell{
+   background-color: #322F33;
+   padding: 3px 5px;
+   border-radius: 5px;
+}
+.bellsec .forbell .belldropdown{
+   visibility: hidden;
+}
+.bellsec .forbell:hover .belldropdown{
+   visibility: visible;
+}
+.bellsec .forbell:active .belldropdown{
+   visibility: visible;
+}
+
+.bellsec .forbell .belldropdown{
+   background: #ffff;
+   border: 1px solid #E3E3E3;
+   position: absolute;
+   border-radius: 10px;
+   padding: 15px;
+   margin-top: 20px;
+   right: 10px;
+}
+.bellsec .forbell .belldropdown .foralertrow{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px;
+}
+.bellsec .forbell .belldropdown .foralertrow p{
+   margin: 0px;
+   color: #475467;
+   font-weight: bold;
+}
+.bellsec .forbell .belldropdown .foralertrow svg{
+   margin: 0px 0px 0px 5px
+}
+.bellsec .forbell .belldropdown .foralertrow path{
+   fill: black;
+   
+}
+.bellsec .forbell .belldropdown .foralerttext{
+   background: #EBEBEB;
+   padding: 15px;
+   margin-top: 10px;
+}
+
+.bellsec .forcollect{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #322F33;
+   height: 35px;
+   border-radius: 8px;
+}
+.bellsec p{
+   color: whitesmoke;
+   width: fit-content;
+   margin-left: 10px;
+   margin-right: 10px;
+   font-size: 15px;
+}
+.forcollect button{
+   height: fit-content;   
+   padding: 8px;
+   border-radius: 5px;
+   border: none;   
+   background-color: #36fba1;
+   box-sizing: border-box;
+
+}
+
+
+section{
+   margin: 0px auto;
+   width: 60%;
+   margin-top: 20px;
+}
+.forsecsec{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center  ;
+   background: #1C181D;
+   border-radius: 10px;
+   height: 60px;
+   padding: 0px 20px;
+}
+.forsecsec .textonb{
+   color: #E3E3E3;
+   font-size: 15px;
+}
+.forsecsec .secbonb{
+   width: 150px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+.forsecsec button{
+   padding: 2px;
+   width: fit-content;
+   height: fit-content;
+}
+.forsecsec .bonb{
+   background: #EBEBEB;
+   border: none;
+   padding: 7px 13px;
+   border-radius: 7px
+}
+.forsecsec .bonb a{
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+}
+.forsecsec .conb{
+   border: none;
+   background: none;
+}
+
+
+.forcontent{
+  margin-top: 15px;
+  padding: 15px;
+  background: white;
+  border: 1px solid #E3E3E3;
+  border-radius: 10px;
+}
+
+.forcontent .forhead{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   height: 20px;
+   margin-bottom: -10px;
+}
+.forcontent .sup{
+   font-weight: bold;
+}
+.forcontent .forhead button{
+   background: none;
+   border: none;
+   width: fit-content;
+   height: fit-content;
+   padding: 4px;
+   border-radius: 8px;
+}
+.forcontent .forhead button:hover{
+   background: #F7F7F7;
+}
+.forcontent .forhead button:active{
+   background: #f0f0f0;
+}
+.forcontent .forhead .bic{
+   fill: black;
+}
+.forcontent progress{
+   accent-color: black;
+   width: 10%;
+      height: 10px;
+}
+
+/* HIDDEN COLLAPSE */
+.forhid{
+   border-radius: 10px;
+   padding: 5px 5px 10px 5px;
+   /* background: red; */
+   margin: 5px 0px;
+}
+.forhid:active{
+   background: #F7F7F7;
+}
+.forhid:active .forhidactive>p{
+   font-weight: bold;
+}
+.forhid .forhidactive{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+.forhid .forhidactive .act{
+   stroke: #475467;
+   border: 1px solid black;
+}
+.forhid .forhidactive div,p{
+   margin-right: 5px;
+}
+.forhid .forhidclick{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+}
+.forhid .forhidclick .forhidclicktext{
+   display: flex;
+   flex-direction: column;
+   width: 60%;
+   margin-left: 30px;
+}
+.forhid .forhidclick .forhidclicktext p{
+   line-height: 18px;
+   color: #616161;
+   font-weight: 700;
+}
+.forhid .forhidclick .forhidclicktext a{
+   text-decoration: none;
+   font-weight: 700;
+}
+.forhid .forhidclick .forhidclicktext button{
+   width: fit-content;
+   padding: 10px 12px;
+   border: 2px solid #1C181D;
+   box-shadow: inset 0px 1px 2px #E3E3E3;
+   border-radius: 10px;
+   background: #323232;
+   color: #E3E3E3;
+   margin-top: 15px;
+   font-weight: 700;
+}
+.forhid .forhidclick .forhidclicktext button:hover{
+   background: #1C181D;
+}
+
+.forhid .forhidclick .forhidclicktext .justtwobutton .secbut{
+   padding: 10px 12px;
+   border: none;
+   box-shadow: none;
+   border-radius: 8px;
+   background: none;
+   color: #616161;
+   margin-left: 10px;
+}
+.forhid .forhidclick .forhidclicktext .justtwobutton .secbut:hover{
+   background: #F7F7F7;
+
+}
+ /* to hide the collapse */
+/* .forcontent .forgencollapse .hidcollapse{
+   visibility: hidden;
+   position: absolute;
+}
+.forcontent .forgencollapse:active .hidcollapse{
+   visibility: visible;
+   position: relative;
+} */
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+   .logosec{
+      width: fit-content;
+   }
+   .logobsc{
+      display: none;
+   }
+   .logossc{
+      position: relative;
+      visibility: visible;
+   }
+   .searchsec{
+      width: 60%;
+   }
+   .bellsec{
+      width: 90px;
+      box-sizing: border-box;
+   }
+   .bellsec .forcollect p{
+      display: none;
+   }
+
+   section{
+      width: 100%;
+   }
+   .forsecsec{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 13px;
+      border-radius: 0px;
+   }
+   .forsecsec .textonb{
+      margin-bottom: 10px;
+   }
+   .forsecsec .secbonb{
+      width: 100%;
+   }
+   .forsecsec .conb{
+      float: right;
+      margin-top: -50px;
+   }
+   .forcontent{
+      border-radius: 0px;
+   }
+
+   .forhid .forhidclick .forhidclicktext{
+      width: 100%;
+   }
+   .forhid .forhidclick .forhidclickimage{
+      display: none;
+   }
+
+}
