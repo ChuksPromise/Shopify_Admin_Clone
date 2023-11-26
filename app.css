@@ -6,6 +6,8 @@ body{
    font-family: sans-serif;
    background: #f1f1f1
 }
+
+/* NAVIGATION MENU STARTS */
 nav{
    background: #1C181D;
    display: flex;
@@ -48,9 +50,6 @@ nav{
    margin-left: 5px;
    outline: none;
    width: 100%;
-}
-svg{
-   /* background: red; */
 }
 .bellsec{
    display: flex;
@@ -134,13 +133,17 @@ svg{
    box-sizing: border-box;
 
 }
+/* NAVIGATION MENU ENDS */
 
 
+/* MAIN CONTENT */
 section{
    margin: 0px auto;
    width: 60%;
    margin-top: 20px;
 }
+
+/* DARK ALERT SECTION */
 .forsecsec{
    display: flex;
    flex-direction: row;
@@ -182,8 +185,9 @@ section{
    border: none;
    background: none;
 }
+/* DARK ALERT SECTION ENDS */
 
-
+/* COLLAPSE SECTION STARTS */
 .forcontent{
   margin-top: 15px;
   padding: 15px;
@@ -223,7 +227,7 @@ section{
 .forcontent progress{
    accent-color: black;
    width: 10%;
-      height: 10px;
+   height: 10px;
 }
 
 /* HIDDEN COLLAPSE */
@@ -300,6 +304,9 @@ section{
    background: #F7F7F7;
 
 }
+/* COLLAPSE SECTION STARTS ENDS */
+
+
  /* to hide the collapse */
 /* .forcontent .forgencollapse .hidcollapse{
    visibility: hidden;
@@ -309,13 +316,6 @@ section{
    visibility: visible;
    position: relative;
 } */
-
-
-
-
-
-
-
 
 @media screen and (max-width: 768px) {
    .logosec{
@@ -363,12 +363,13 @@ section{
    .forcontent{
       border-radius: 0px;
    }
-
+   .forcontent progress{
+      width: 20%;
+      }
    .forhid .forhidclick .forhidclicktext{
       width: 100%;
    }
    .forhid .forhidclick .forhidclickimage{
       display: none;
    }
-
 }
